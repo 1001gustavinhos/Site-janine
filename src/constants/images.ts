@@ -1,0 +1,20 @@
+export const images = {
+  home: {
+    banner: "images/banner.webp",
+    banner2: "images/banner2.webp",
+    logo: "images/logo.svg",
+    logoHorizontal: "images/logoHorizontal.svg",
+    logoHorizontal2: "images/logoHorizontal2.svg",
+    section1: "images/section1.webp",
+    section2: "images/section2.webp",
+    bento1: "images/bento1.webp",
+    bento2: "images/bento2.webp",
+    bento3: "images/bento3.webp",
+    bento4: "images/bento4.webp",
+    diferenciais: "images/diferenciais.png",
+    fullBanner: "images/fullBanner.png",
+    about: "images/about.jpeg",
+    books: "images/books.jpg",
+    plant: "images/plant.jpg",
+  },
+};

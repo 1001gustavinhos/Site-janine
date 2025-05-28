@@ -1,0 +1,76 @@
+@import "./fonts.css";
+@import "tailwindcss";
+@import "tw-animate-css";
+
+@custom-variant dark (&:is(.dark *));
+
+@theme inline {
+  --color-background2: var(--background2);
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-muted-foreground: var(--muted-foreground);
+
+  --color-primary: var(--primary);
+  --color-primary-foreground: var(--primary-foreground);
+
+  --color-secondary: var(--secondary);
+  --color-secondary-foreground: var(--secondary-foreground);
+
+  --color-card: var(--card);
+  --color-card-foreground: var(--card-foreground);
+
+  --color-footer-background: var(--footer-background);
+  --color-footer-foreground: var(--footer-foreground);
+}
+
+:root {
+  --background: #fffbf9;
+  --background2: #eae5cb;
+  --foreground: #5f6750;
+  --muted-foreground: #818181;
+
+  --primary: #191716;
+  --primary-foreground: #fff2eb;
+
+  --secondary: #fff2eb;
+  --secondary-foreground: #f0f0f0;
+
+  --card: #2f2f2f;
+  --card-foreground: #f0f0f0;
+
+  --footer-background: #5f6750;
+  --footer-foreground: #dfd7b2;
+}
+
+.dark {
+  --background: #f8f7f3;
+  --foreground: #2f2f2f;
+  --muted-foreground: #818181;
+
+  --primary: #2f2f2f;
+  --primary-foreground: #f8f7f3;
+
+  --secondary: #a88d72;
+  --secondary-foreground: #f0f0f0;
+
+  --card: #2f2f2f;
+  --card-foreground: #f0f0f0;
+
+  --footer-background: #2f2f2f;
+  --footer-foreground: #ebe4da;
+}
+
+@theme {
+  --font-clash-grotesk: "ClashGrotesk", sans-serif;
+  --font-poppins: "Poppins", sans-serif;
+  --font-josefin: "Josefin Sans", sans-serif;
+}
+
+@layer base {
+  * {
+    @apply font-clash-grotesk;
+  }
+  body {
+    @apply bg-background text-foreground;
+  }
+}
