@@ -137,8 +137,8 @@ export const ImageSection = ({
 export const OwnerSection = () => {
   return (
     <section className="py-8 md:bg-none bg-linear-to-b from-background2 from-10% to-background to-90% md:py-24 ">
-      <Container className="flex flex-col  md:flex-row justify-between">
-        <div className="rounded-3xl overflow-hidden mx-auto md:mx-0  w-full max-w-[410px]">
+      <Container className="flex flex-col  md:flex-row  justify-between">
+        <div className="rounded-3xl overflow-hidden  mx-auto  md:mx-0  w-full max-w-[410px]">
           <img
             loading="lazy"
             src={images.home.about}
@@ -147,13 +147,13 @@ export const OwnerSection = () => {
           />
         </div>
 
-        <div className="w-full flex flex-col max-w-[524px] gap-6">
+        <div className="w-full flex flex-col  mx-auto md:mx-0 max-w-[524px] gap-6">
           <div className="flex flex-col">
-            <h1 className="md:text-[40px] text-[25px] text-footer-background leading-[100%] text-center md:text-start">
+            <h1 className="md:text-[40px] text-[25px] text-footer-background pt-2 leading-[100%] text-center md:text-start">
               Psi. Janine Coelho Correa
             </h1>
 
-            <h2 className="font-poppins font-light text-xl">
+            <h2 className="font-poppins text-center md:text-start py-1 font-light text-xl">
               Psicóloga Analista do Comportamento - ACT & FAP
             </h2>
             <span className="font-medium text-center md:text-start">
