@@ -284,7 +284,9 @@ export const DifferencesSection = () => {
   return (
     <section className="py-8 md:py-24">
       <Container className="flex flex-col gap-4 md:gap-8 relative">
-        <h2 className="text-[25px] md:text-[40px]">Sobre o atendimento</h2>
+        <h2 className="text-[25px] text-foreground md:text-[40px]">
+          Sobre o atendimento
+        </h2>
         <div className="flex gap-8">
           <Accordion className="gap-4 flex-col flex flex-1" type="multiple">
             <DifferencesItem
@@ -375,10 +377,10 @@ export const DifferencesItem = ({
   return (
     <AccordionItem value={value}>
       <AccordionTrigger>
-        <div className="flex gap-6 items-center">
+        <div className="flex text-[#E08F62] gap-6 items-center">
           <Icon size={32} />
-          <div className="flex flex-col">
-            <h3 className="font-medium">{title}</h3>
+          <div className="flex text-foreground flex-col">
+            <h3 className="font-medium text-lg">{title}</h3>
           </div>
         </div>
       </AccordionTrigger>
