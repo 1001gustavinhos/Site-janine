@@ -13,7 +13,6 @@ import { cn, handleContact, handleContactFullbanerOnline } from "@/lib/utils";
 
 import {
   BadgeCheck,
-  Bird,
   Brain,
   GraduationCap,
   SparkleIcon,
@@ -236,7 +235,7 @@ export const FullBanner = () => {
 export const CertificationSection = () => {
   return (
     <Container>
-      <section className="py-8 md:pb-24 md:pt-12 gap-6">
+      <section className="py-8 md:py-12 gap-6">
         <div className="mb-4 flex flex-col md:flex-row items-center gap-y-8 md:justify-between text-center">
           <div className="max-w-2xs p-4 bg-background2 rounded-4xl space-y-1">
             <div className="flex justify-center items-center">
@@ -290,38 +289,55 @@ export const DifferencesSection = () => {
           <Accordion className="gap-4 flex-col flex flex-1" type="multiple">
             <DifferencesItem
               value={"1"}
-              title="Calorimetria indireta"
-              description="Exame padrão-ouro que mede com precisão o gasto calórico do seu corpo em repouso."
+              title="Por que o atendimento online?"
               icon={SparkleIcon}
-              text="A calorimetria indireta é o exame padrão-ouro para medir a taxa metabólica basal — ou seja, quantas calorias seu corpo gasta em repouso para manter as funções vitais. Através da análise dos gases expirados, é possível entender com precisão o seu metabolismo e personalizar ainda mais o plano alimentar. Esse recurso, ainda raro em consultórios, está incluído nas consultas presenciais da Clínica Veríssimo."
+              text="O atendimento online proporciona mais conforto, flexibilidade e acessibilidade. 
+              Você pode realizar suas sessões de onde estiver, sem deslocamentos. 
+              A terapia online é segura, sigilosa e tem eficácia comprovada por diversos estudos."
             />
             <DifferencesItem
               value={"2"}
-              title="Atendimento humanizado e personalizado"
-              description="Consultas com até 2h de duração para ouvir, investigar e entender você com atenção aos detalhes."
+              title=" Quais são os requisitos para a sessão online?"
               icon={SparkleIcon}
-              text="Cada consulta tem entre 1h30 e 2h de duração, um tempo pensado para ouvir, compreender e investigar, com atenção aos detalhes que muitas vezes passam despercebidos em atendimentos rápidos. Aqui, você é ouvido com tempo, cuidado e respeito pela sua história."
+              text="Você vai precisar de um local reservado e tranquilo, conexão estável com a internet, 
+              um dispositivo com câmera e microfone, e um link que será enviado antes da sessão. 
+              Fones de ouvido são recomendados para mais privacidade."
             />
             <DifferencesItem
               value={"3"}
-              title="Avaliação corporal com metodologia avançada"
-              description="Análise completa com bioimpedância segmentada, dobras cutâneas e fotos evolutivas."
+              title="Quem deve fazer terapia?"
               icon={SparkleIcon}
-              text="Utilizamos bioimpedância segmentada, dobras cutâneas com padrão internacional ISAK, circunferências corporais e análise fotográfica para comparação evolutiva ao longo do tempo. Essas ferramentas permitem uma análise completa e embasada da composição corporal durante todo o processo de acompanhamento."
+              text="A terapia é para todos que desejam se conhecer melhor, lidar com emoções, 
+              desenvolver habilidades ou atravessar momentos difíceis. 
+              Você não precisa estar em crise para procurar ajuda."
             />
             <DifferencesItem
               value={"4"}
-              title="Resultado onde quer que você esteja"
-              description="Consulta online com avaliação por scanner 3D com inteligência artificial."
+              title="Qual é o público atendido?"
               icon={SparkleIcon}
-              text="Pensada para quem busca praticidade e flexibilidade para alcançar seus objetivos, a consulta online mantém o nível de estratégia e personalização da versão presencial. A avaliação corporal é feita por meio de scanner 3D com inteligência artificial, que capta suas medidas com precisão a partir de fotos."
+              text="Atendo adultos a partir de 18 anos, com demandas relacionadas a ansiedade, 
+              estresse, autoestima, relacionamentos, transições de vida e mais. 
+              Cada acompanhamento é personalizado, respeitando sua história e necessidades."
             />
             <DifferencesItem
               value={"5"}
-              title="Contato direto e suporte contínuo"
-              description="Canal direto com a nutricionista após a consulta, sem intermediários."
+              title="O que acontece na primeira sessão?"
               icon={SparkleIcon}
-              text="Após a consulta, o paciente tem acesso exclusivo a um canal direto com a nutricionista via WhatsApp. Esse contato é reservado para tirar dúvidas, revisar exames e ajustar estratégias de forma prática, ágil e sem intermediários — garantindo continuidade e suporte real ao longo do processo"
+              text="A primeira sessão é um espaço de acolhimento e escuta. É o momento em que você pode contar, no seu tempo, o que te trouxe até aqui. Também é quando a psicóloga vai explicar como funciona o processo terapêutico, esclarecer dúvidas e combinar aspectos práticos, como frequência dos encontros. Não é necessário 'saber por onde começar' — a conversa é conduzida com sensibilidade, e não há pressa nem cobranças."
+            />
+
+            <DifferencesItem
+              value={"6"}
+              title="É seguro fazer terapia online?"
+              icon={SparkleIcon}
+              text="Sim, a terapia online é segura quando realizada por profissionais devidamente registrados e com os cuidados necessários. As plataformas utilizadas são escolhidas com critério, priorizando a privacidade e o sigilo das informações compartilhadas. Além disso, o atendimento online é regulamentado pelo Conselho Federal de Psicologia, o que garante respaldo ético e técnico à prática."
+            />
+
+            <DifferencesItem
+              value={"7"}
+              title="O que acontece com minhas informações pessoais?"
+              icon={SparkleIcon}
+              text="Todas as informações compartilhadas em sessão são protegidas por sigilo profissional, conforme previsto no Código de Ética da Psicologia. Seus dados pessoais, históricos e relatos são tratados com absoluto cuidado, e nunca são compartilhados com terceiros. O ambiente da terapia é seguro, e a confidencialidade é uma prioridade em todo o processo."
             />
             {/* <AccordionItem value="item-1">
           <AccordionTrigger>Is it accessible?</AccordionTrigger>
@@ -345,14 +361,12 @@ export const DifferencesSection = () => {
 
 export const DifferencesItem = ({
   title,
-  description,
   text,
   icon,
   value,
 }: {
   icon: LucideIcon;
   title: string;
-  description: string;
   text: string;
   value: string;
 }) => {
@@ -365,7 +379,6 @@ export const DifferencesItem = ({
           <Icon size={32} />
           <div className="flex flex-col">
             <h3 className="font-medium">{title}</h3>
-            <p className="text-sm">{description}</p>
           </div>
         </div>
       </AccordionTrigger>
