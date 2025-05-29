@@ -6,18 +6,9 @@ import { handleContact } from "@/lib/utils";
 export const Footer = () => {
   return (
     <footer className="w-full py-16 bg-footer-background text-footer-foreground">
-      <Container className="flex flex-col gap-6 md:gap-8">
-        <div className="flex flex-col md:flex-row justify-center gap-4 md:gap-0">
-          <div>
-            <img
-              src={images.home.logoHorizontal2}
-              className="w-[350px]"
-              alt=""
-            />
-          </div>
-          {/* <div className="gap-4 hidden md:flex">
-            <SocialIcons className="text-footer-foreground" />
-          </div>*/}
+      <Container className="flex flex-col justify-center gap-6 md:gap-8">
+        <div className="flex justify-center  gap-4 md:gap-0">
+          <img src={images.home.logoHorizontal2} className="w-[350px]" alt="" />
         </div>
 
         <div className="flex flex-col md:flex-row justify-center md:text-start text-center">
