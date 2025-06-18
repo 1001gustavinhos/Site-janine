@@ -120,13 +120,12 @@ export const Hero = () => {
         ref={textRef}
         className="relative z-30 max-w-3xl text-center md:pt-25 pt-15 px-6"
       >
-        <h1 className="text-4xl md:text-5xl font-semibold mb-6 leading-snug">
+        <h1 className="text-3xl md:text-5xl font-semibold mb-6 leading-snug">
           Um espaço de{" "}
           <Underline
             ref={(el) => (highlightsRef.current[0] = el!)}
-            word="escuta"
-          />
-          ,{" "}
+            word="escuta,"
+          />{" "}
           <Underline
             ref={(el) => (highlightsRef.current[1] = el!)}
             word="acolhimento"
@@ -134,9 +133,8 @@ export const Hero = () => {
           e{" "}
           <Underline
             ref={(el) => (highlightsRef.current[2] = el!)}
-            word="transformação"
+            word="reconexão."
           />
-          .
         </h1>
         <p className="text-lg font-poppins md:text-xl leading-relaxed mx-4">
           Aqui, cada história é recebida com cuidado e atenção. Vamos construir
@@ -149,7 +147,7 @@ export const Hero = () => {
             onClick={scrollToOwner}
             className="flex items-center font-poppins justify-center mx-auto gap-3 bg-foreground text-background px-6 py-2 rounded-full text-lg transition duration-300 hover:brightness-120"
           >
-            Vamos juntos
+            Saiba mais
             <ChevronDown className="size-6 text-background animate-bounce" />
           </button>
         </div>
@@ -168,7 +166,7 @@ const Underline = ({
 }) => (
   <span ref={ref} className="relative inline-block px-1">
     <span
-      className="absolute bottom-1 left-0 w-full h-[3px] bg-foreground origin-left scale-x-0"
+      className="absolute md:bottom-1 bottom-0 left-0 w-full h-[3px] bg-foreground origin-left scale-x-0"
       style={{ transformOrigin: "left" }}
     />
     {word}

@@ -13,6 +13,8 @@
   --color-primary: var(--primary);
   --color-primary-foreground: var(--primary-foreground);
 
+  --color-hotorange: var(--hotorange);
+
   --color-secondary: var(--secondary);
   --color-secondary-foreground: var(--secondary-foreground);
 
@@ -34,6 +36,8 @@
 
   --secondary: #fff2eb;
   --secondary-foreground: #f0f0f0;
+
+  --hotorange: #e08f62;
 
   --card: #2f2f2f;
   --card-foreground: #f0f0f0;
@@ -64,6 +68,16 @@
   --font-clash-grotesk: "ClashGrotesk", sans-serif;
   --font-poppins: "Poppins", sans-serif;
   --font-josefin: "Josefin Sans", sans-serif;
+  --animate-wiggle: wiggle 1s ease-in-out infinite;
+  @keyframes wiggle {
+    0%,
+    100% {
+      transform: rotate(-6deg);
+    }
+    50% {
+      transform: rotate(6deg);
+    }
+  }
 }
 
 @layer base {

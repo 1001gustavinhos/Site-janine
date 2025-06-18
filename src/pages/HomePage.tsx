@@ -17,6 +17,7 @@ import {
   Brain,
   GraduationCap,
   SparkleIcon,
+  MessageSquareText,
   type LucideIcon,
 } from "lucide-react";
 
@@ -149,8 +150,9 @@ export const OwnerSection = () => {
           </p>
           <button
             onClick={handleContactFullbanerOnline}
-            className="cursor-pointer font-poppins px-4 py-2 max-w-2xs md:text-lg text-base  bg-foreground text-background rounded-full hover:opacity-50 transition-all"
+            className="group cursor-pointer flex items-center justify-center gap-4 font-poppins px-4 py-2 max-w-2xs md:text-lg text-base  bg-foreground text-background rounded-full hover:brightness-120 transition-all"
           >
+            <MessageSquareText className="size-6 text-background group-hover:animate-wiggle" />
             Vamos conversar
           </button>
         </div>
@@ -179,16 +181,17 @@ export const FullBanner = () => {
         <h2 className="md:text-[40px] text-[25px] max-w-[75%] font-clash-grotesk text-white md:max-w-[489px] leading-[100%] pointer-events-auto">
           Você merece esse espaço terapêutico.
         </h2>
-        <p className="text-xl font-poppins text-[15px] max-w-[75%] text-white w-full md:max-w-[489px] pointer-events-auto">
+        <p className="md:text-base font-poppins text-[15px] max-w-[75%] text-white w-full md:max-w-[489px] pointer-events-auto">
           A terapia é um convite para olhar para si com mais compreensão. Se
-          você sente que é hora de se cuidar, estou aqui para caminhar ao seu
-          lado.
+          você sente que é hora de se cuidar, posso te acompanhar nesse
+          processo.
         </p>
         <div className="flex gap-4 pointer-events-auto">
           <button
             onClick={handleContactFullbanerOnline}
-            className="cursor-pointer font-poppins px-4 py-2 md:text-lg text-sm bg-background text-foreground rounded-full hover:brightness-70 transition-all"
+            className="group flex gap-3 items-center cursor-pointer font-poppins px-6 py-2 md:text-lg text-sm bg-background text-foreground rounded-full hover:brightness-70 transition-all"
           >
+            <MessageSquareText className="size-6 text-foreground group-hover:animate-wiggle" />
             Estou aqui para te ouvir
           </button>
         </div>
@@ -201,6 +204,56 @@ export const FullBanner = () => {
     </section>
   );
 };
+
+// export const CertificationSection = () => {
+//   const items = [
+//     {
+//       icon: <Brain className="size-7 text-foreground" />,
+//       title: "Foco de atuação",
+//       description:
+//         "Atendimento a adultos por meio de abordagens baseadas em evidências científicas há mais de 8 anos.",
+//     },
+//     {
+//       icon: <BadgeCheck className="size-7 text-foreground" />,
+//       title: "Especializações",
+//       description:
+//         "Certificação em ACT (Terapia de Aceitação e Compromisso) e FAP (Psicoterapia Analítica Funcional).",
+//     },
+//     {
+//       icon: <GraduationCap className="size-7 text-foreground" />,
+//       title: "Formação acadêmica",
+//       description:
+//         "Graduada em Psicologia pela UNESP - Bauru com foco em Análise do Comportamento.",
+//     },
+//   ];
+
+//   return (
+//     <Container>
+//       <section className="py-12">
+//         <div className="grid gap-6 md:grid-cols-3">
+//           {items.map((item, i) => (
+//             <div
+//               key={i}
+//               className="bg-background2 rounded-3xl p-6 shadow-sm hover:shadow-md transition-all duration-300"
+//             >
+//               <div className="flex items-start gap-4">
+//                 <div>{item.icon}</div>
+//                 <div>
+//                   <h3 className="text-lg font-semibold text-foreground mb-2">
+//                     {item.title}
+//                   </h3>
+//                   <p className="text-sm text-muted-foreground">
+//                     {item.description}
+//                   </p>
+//                 </div>
+//               </div>
+//             </div>
+//           ))}
+//         </div>
+//       </section>
+//     </Container>
+//   );
+// };
 
 export const CertificationSection = () => {
   return (
@@ -237,7 +290,7 @@ export const CertificationSection = () => {
             <div className="flex justify-center items-center">
               <Brain size={64} className="text-foreground" />
             </div>
-            <h2 className="text-base ">
+            <h2 className="text-base">
               <span className="text-xl text-foreground">Foco de atuação</span>{" "}
               <br />
               <br /> Atendimento a adultos por meio de abordagens baseadas em
@@ -343,7 +396,7 @@ export const DifferencesItem = ({
   return (
     <AccordionItem value={value}>
       <AccordionTrigger>
-        <div className="flex text-[#E08F62] md:gap-6 gap-3 items-center">
+        <div className="flex text-hotorange md:gap-6 gap-3 items-center">
           <Icon className="size-6" />
           <div className="flex text-foreground flex-col">
             <h3 className="md:font-medium text-base md:text-lg">{title}</h3>
