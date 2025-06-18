@@ -99,7 +99,7 @@ export const ImageSection = ({
 
 export const OwnerSection = () => {
   return (
-    <section id="ownersection" className="pb-8 md:pb-24 ">
+    <section id="ownersection" className="pb-8 pt-4 md:pb-24 ">
       <Container className="flex flex-col  md:flex-row  justify-between">
         <div className="rounded-3xl overflow-hidden  mx-auto  md:mx-0  w-full max-w-[410px]">
           <img
