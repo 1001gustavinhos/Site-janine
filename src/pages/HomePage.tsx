@@ -150,7 +150,7 @@ export const OwnerSection = () => {
           </p>
           <button
             onClick={handleContactFullbanerOnline}
-            className="group cursor-pointer flex items-center justify-center gap-4 font-poppins px-4 py-2 max-w-2xs md:text-lg text-base  bg-foreground text-background rounded-full hover:brightness-120 transition-all"
+            className="group cursor-pointer flex items-center justify-center gap-3 font-poppins px-4 py-2 max-w-2xs md:text-lg text-base  bg-foreground text-background rounded-full hover:brightness-120 transition-all"
           >
             <MessageSquareText className="size-6 text-background group-hover:animate-wiggle" />
             Vamos conversar
