@@ -76,7 +76,10 @@ export const Hero = () => {
   }, []);
 
   return (
-    <section className="relative h-screen w-full bg-background overflow-hidden flex justify-center text-foreground">
+    <section
+      id="hero"
+      className="relative h-screen w-full bg-background overflow-hidden flex justify-center text-foreground"
+    >
       {/* Ondas SVG */}
       <svg
         className="absolute w-full h-full z-20 pointer-events-none"

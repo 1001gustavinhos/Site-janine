@@ -10,6 +10,7 @@ import { Header } from "@/components/ui/header";
 import { Hero } from "@/components/ui/hero";
 import { images } from "@/constants/images";
 import { cn, handleContact, handleContactFullbanerOnline } from "@/lib/utils";
+import { useEffect, useState } from "react";
 
 import {
   BadgeCheck,
@@ -359,10 +360,33 @@ export const DifferencesItem = ({
 };
 
 export const WhatsAppBadge = () => {
+  const [showBadge, setShowBadge] = useState(false);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      const hero = document.getElementById("hero");
+      if (hero) {
+        const heroBottom = hero.getBoundingClientRect().bottom;
+        // Mostra a badge quando o hero estiver 100px acima do viewport
+        setShowBadge(heroBottom < window.innerHeight - 50);
+      }
+    };
+
+    window.addEventListener("scroll", handleScroll);
+    handleScroll(); // Executa na montagem para caso o scroll já esteja além
+
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, []);
+
   return (
-    <div className="w-full sticky z-50 bottom-4">
+    <div
+      className={cn(
+        "w-full sticky z-50 bottom-4 transition-opacity duration-500 ease-in-out",
+        showBadge ? "opacity-100" : "opacity-0 pointer-events-none"
+      )}
+    >
       <div className="max-w-[1920px] w-full h-0 absolute pointer-events-none z-50 left-1/2 -translate-x-1/2">
-        <div className="-translate-y-full right-4 absolute -top-4  w-20 h-20 flex items-center justify-center hover:[&>button]:w-18 hover:[&>button]:h-18 pointer-events-auto">
+        <div className="-translate-y-full right-4 absolute -top-4 size-20 flex items-center justify-center hover:[&>button]:w-18 hover:[&>button]:h-18 pointer-events-auto">
           <button
             className="w-full h-full flex items-center justify-center bg-foreground rounded-full transition-all cursor-pointer hover:opacity-80"
             onClick={handleContact}
