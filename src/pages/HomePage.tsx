@@ -186,7 +186,7 @@ export const FullBanner = () => {
         <div className="flex gap-4 pointer-events-auto">
           <button
             onClick={handleContactFullbanerOnline}
-            className="cursor-pointer font-poppins px-4 py-2 md:text-lg text-sm bg-background text-foreground rounded-full hover:opacity-50 transition-all"
+            className="cursor-pointer font-poppins px-4 py-2 md:text-lg text-sm bg-background text-foreground rounded-full hover:brightness-70 transition-all"
           >
             Estou aqui para te ouvir
           </button>
