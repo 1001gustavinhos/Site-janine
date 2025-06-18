@@ -7,7 +7,7 @@ import {
 import { Container } from "@/components/ui/container";
 import { Footer } from "@/components/ui/footer";
 import { Header } from "@/components/ui/header";
-
+import { Hero } from "@/components/ui/hero";
 import { images } from "@/constants/images";
 import { cn, handleContact, handleContactFullbanerOnline } from "@/lib/utils";
 
@@ -24,7 +24,9 @@ export const HomePage = () => {
     <>
       <Header />
       <main>
+        <Hero />
         <OwnerSection />
+
         <CertificationSection />
         <DifferencesSection />
         <FullBanner />
@@ -33,45 +35,6 @@ export const HomePage = () => {
 
       <Footer />
     </>
-  );
-};
-
-export const BannerSection = () => {
-  return (
-    <section className="w-full max-w-[1440px] md:px-7 px-2 md:aspect-[77/40] m-auto">
-      <div className="aspect-[77/40] w-full relative md:rounded-[60px] rounded-2xl overflow-hidden md:justify-normal justify-end md:py-16 h-full">
-        <div className="absolute w-full h-full top-0 left-0 after:bg-gradient-to-t after:from-black/60 after:to-transparent after:content-[''] after:absolute after:w-full after:h-full after:top-0 after:left-0 md:after:hidden">
-          {/* <img
-            loading="lazy"
-            className="w-full h-full object-cover brightness-70 md:hidden"
-            src={images.home.banner}
-            width={'auto'}
-            height={'auto'}
-            alt=""
-          /> */}
-          <img
-            loading="lazy"
-            className="w-full h-full object-cover md:brightness-90 md:block"
-            src={images.home.banner2}
-            width={"auto"}
-            height={"auto"}
-            alt=""
-          />
-        </div>
-
-        <Container className="relative flex flex-col md:justify-center justify-end h-full">
-          <h1 className="md:text-[42px] font-clash-grotesk text-[22px] max-w-[500px] text-background pb-2 md:pb-6 leading-[132%]">
-            Nutrição da vida real: energia, disciplina, clareza e qualidade de
-            vida.
-          </h1>
-          <div className="flex md:flex-col md:gap-5 pb-4">
-            <p className="w-full max-w-[461px] text-start md:text-2xl font-light text-background">
-              Tudo aliado a muita ciência e propósito.
-            </p>
-          </div>
-        </Container>
-      </div>
-    </section>
   );
 };
 
@@ -135,7 +98,7 @@ export const ImageSection = ({
 
 export const OwnerSection = () => {
   return (
-    <section className="py-8 md:bg-none bg-linear-to-b from-background2 from-10% to-background to-90% md:py-24 ">
+    <section id="ownersection" className="pb-8 md:pb-24 ">
       <Container className="flex flex-col  md:flex-row  justify-between">
         <div className="rounded-3xl overflow-hidden  mx-auto  md:mx-0  w-full max-w-[410px]">
           <img
@@ -146,7 +109,7 @@ export const OwnerSection = () => {
           />
         </div>
 
-        <div className="w-full flex flex-col  mx-auto md:mx-0 max-w-[524px] gap-6">
+        <div className="w-full flex flex-col  mx-auto md:mx-0 max-w-[524px] gap-6 md:gap-8">
           <div className="flex flex-col">
             <h1 className="md:text-[40px] text-[25px] text-footer-background pt-2 leading-[100%] text-center md:text-start">
               Psi. Janine Coelho Correa
@@ -160,28 +123,34 @@ export const OwnerSection = () => {
             </span>
           </div>
 
-          <blockquote className="font-poppins pl-3 border-l-2 text-justify font-light hyphens-auto">
+          {/* <blockquote className="font-poppins pl-3 border-l-2 text-justify font-light hyphens-auto">
             “Cada processo terapêutico é conduzido com base em escuta ativa,
             vínculo terapêutico e intervenções fundamentadas em evidências
             científicas. Aqui, você não encontra fórmulas prontas — encontra
             acolhimento real, ciência aplicada e um espaço pensado para você ser
             quem é, com segurança e respeito. ”
-          </blockquote>
+          </blockquote> */}
 
-          <p className="font-poppins text-justify font-light hyphens-auto">
-            Seja bem-vindo(a)! Este é um espaço criado com cuidado para você
-            conhecer mais sobre meu trabalho como psicóloga, minhas abordagens
-            terapêuticas e como podemos caminhar juntos(as) em direção ao seu
-            bem-estar emocional. Se você está em busca de um espaço de escuta,
-            acolhimento e transformação, fico feliz que esteja aqui. Caso surjam
-            dúvidas ou você deseje agendar uma primeira conversa, estou à
-            disposição.
+          <p className="font-poppins text-[17px] text-justify font-light hyphens-auto">
+            Sou Psicóloga Formada pela Unesp em 2018, atuo com o atendimento
+            clinico de adultos desde a conclusão da minha graduação e adoto como
+            abordagem a Terapia Comportamental. Também tenho especialização em
+            Psicoterapia Analítica Funcional (FAP) e em Terapia de aceitação e
+            compromisso (ACT).
+            <br />
+            <br />
+            Acredito que uma terapia baseada em evidencias proporciona o suporte
+            necessário para que eu consiga guiar o processo terapêutico sem
+            abrir mão de tudo que existe de mais novo em pesquisa na área de
+            psicologia. No entanto, considero que a abordagem humana e o
+            acolhimento são igualmente essenciais para tornar esse processo
+            significativo e transformador.
           </p>
           <button
             onClick={handleContactFullbanerOnline}
-            className="cursor-pointer font-poppins px-4 py-2 max-w-xs md:text-base text-sm bg-foreground text-white rounded-full hover:opacity-50 transition-all"
+            className="cursor-pointer font-poppins px-4 py-2 max-w-2xs md:text-lg text-base  bg-foreground text-background rounded-full hover:opacity-50 transition-all"
           >
-            Fale comigo
+            Vamos conversar
           </button>
         </div>
       </Container>
@@ -198,7 +167,7 @@ export const FullBanner = () => {
       <div className="absolute pointer-events-none top-0 left-0 w-full h-full overflow-hidden">
         <img
           // ref={imgRef}
-          className="w-full h-full object-cover brightness-70 duration-200 ease-out "
+          className="w-full h-full object-cover brightness-60 duration-200 ease-out "
           src={images.home.books}
           loading="lazy"
           alt=""
@@ -207,19 +176,19 @@ export const FullBanner = () => {
 
       <Container className="relative z-10 flex flex-col justify-center gap-6 h-full pointer-events-none">
         <h2 className="md:text-[40px] text-[25px] max-w-[75%] font-clash-grotesk text-white md:max-w-[489px] leading-[100%] pointer-events-auto">
-          Você merece um espaço de acolhimento.
+          Você merece esse espaço terapêutico.
         </h2>
         <p className="text-xl font-poppins text-[15px] max-w-[75%] text-white w-full md:max-w-[489px] pointer-events-auto">
-          A terapia é um convite para olhar para si com mais compreensão e menos
-          cobrança. Se você sente que é hora de se cuidar, estou aqui para
-          caminhar ao seu lado.
+          A terapia é um convite para olhar para si com mais compreensão. Se
+          você sente que é hora de se cuidar, estou aqui para caminhar ao seu
+          lado.
         </p>
         <div className="flex gap-4 pointer-events-auto">
           <button
             onClick={handleContactFullbanerOnline}
-            className="cursor-pointer font-poppins px-4 py-2 md:text-sm text-xs bg-background text-foreground rounded-full hover:opacity-50 transition-all"
+            className="cursor-pointer font-poppins px-4 py-2 md:text-lg text-sm bg-background text-foreground rounded-full hover:opacity-50 transition-all"
           >
-            Fale comigo
+            Estou aqui para te ouvir
           </button>
         </div>
         {/* <p className="md:text-xl text-xs font-light font-poppins text-white text-center pt-3 md:hidden">
@@ -293,9 +262,7 @@ export const DifferencesSection = () => {
               value={"1"}
               title="Por que o atendimento online?"
               icon={SparkleIcon}
-              text="O atendimento online proporciona mais conforto, flexibilidade e acessibilidade. 
-              Você pode realizar suas sessões de onde estiver, sem deslocamentos. 
-              A terapia online é segura, sigilosa e tem eficácia comprovada por diversos estudos."
+              text="O atendimento online proporciona mais conforto, flexibilidade e acessibilidade. Você pode realizar suas sessões de onde estiver, sem deslocamentos. A terapia online é segura, sigilosa e tem eficácia comprovada assim como a terapia presencial."
             />
             <DifferencesItem
               value={"2"}
@@ -317,15 +284,13 @@ export const DifferencesSection = () => {
               value={"4"}
               title="Qual é o público atendido?"
               icon={SparkleIcon}
-              text="Atendo adultos a partir de 18 anos, com demandas relacionadas a ansiedade, 
-              estresse, autoestima, relacionamentos, transições de vida e mais. 
-              Cada acompanhamento é personalizado, respeitando sua história e necessidades."
+              text="Atendo adultos a partir de 18 anos, com demandas relacionadas a ansiedade, estresse, relacionamentos, transições de vida, luto, alguns transtornos, como TEPT (Transtorno de Estresse Pós-Traumático) e TOC (Transtorno Obsessivo-Compulsivo), e mais. Cada acompanhamento é personalizado, respeitando sua história e necessidades."
             />
             <DifferencesItem
               value={"5"}
               title="O que acontece na primeira sessão?"
               icon={SparkleIcon}
-              text="A primeira sessão é um espaço de acolhimento e escuta. É o momento em que você pode contar, no seu tempo, o que te trouxe até aqui. Também é quando a psicóloga vai explicar como funciona o processo terapêutico, esclarecer dúvidas e combinar aspectos práticos, como frequência dos encontros. Não é necessário 'saber por onde começar' — a conversa é conduzida com sensibilidade, e não há pressa nem cobranças."
+              text="Na primeira sessão eu irei escutar suas queixas e demandas, independente da forma como elas chegarem nesse primeiro momento. Você pode contar, no seu tempo, o que te trouxe até aqui. Também é quando a explicarei, se couber nessa sessão, como funciona o processo terapêutico, esclarecerei dúvidas e combinarei aspectos práticos das sessões, como frequência dos encontros. Não é necessário 'saber por onde começar' — a conversa é conduzida conforme a sua necessidade e não há pressa nem cobranças."
             />
 
             <DifferencesItem
@@ -377,10 +342,10 @@ export const DifferencesItem = ({
   return (
     <AccordionItem value={value}>
       <AccordionTrigger>
-        <div className="flex text-[#E08F62] gap-6 items-center">
-          <Icon size={32} />
+        <div className="flex text-[#E08F62] md:gap-6 gap-3 items-center">
+          <Icon className="size-6" />
           <div className="flex text-foreground flex-col">
-            <h3 className="font-medium text-lg">{title}</h3>
+            <h3 className="md:font-medium text-base md:text-lg">{title}</h3>
           </div>
         </div>
       </AccordionTrigger>
@@ -395,7 +360,7 @@ export const DifferencesItem = ({
 
 export const WhatsAppBadge = () => {
   return (
-    <div className="w-full sticky bottom-4">
+    <div className="w-full sticky z-50 bottom-4">
       <div className="max-w-[1920px] w-full h-0 absolute pointer-events-none z-50 left-1/2 -translate-x-1/2">
         <div className="-translate-y-full right-4 absolute -top-4  w-20 h-20 flex items-center justify-center hover:[&>button]:w-18 hover:[&>button]:h-18 pointer-events-auto">
           <button

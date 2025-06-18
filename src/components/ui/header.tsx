@@ -7,7 +7,7 @@ export const Header = () => {
       <Container className="flex justify-center items-center w-full h-full">
         <img
           src={images.home.logoHorizontal}
-          className="w-[350px] md:block hidden"
+          className="w-[420px] md:block hidden"
           alt=""
         />
         <img
