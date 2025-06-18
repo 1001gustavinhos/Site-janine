@@ -11,7 +11,8 @@ export const Hero = () => {
     const target = document.getElementById("ownersection");
     if (target) {
       target.scrollIntoView({
-        block: "center",
+        block: "start",
+        inline: "start",
         behavior: "smooth",
       });
     }
@@ -149,7 +150,7 @@ export const Hero = () => {
             className="flex items-center font-poppins justify-center mx-auto gap-3 bg-foreground text-background px-6 py-2 rounded-full text-lg transition duration-300 hover:brightness-120"
           >
             Vamos juntos
-            <ChevronDown className="size-6 text-background motion-reduce:animate-bounce" />
+            <ChevronDown className="size-6 text-background animate-bounce" />
           </button>
         </div>
       </div>
