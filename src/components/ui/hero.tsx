@@ -136,7 +136,7 @@ export const Hero = () => {
             word="reconexão."
           />
         </h1>
-        <p className="text-lg font-poppins md:text-xl leading-relaxed mx-4">
+        <p className="text-base font-poppins md:text-xl leading-relaxed mx-4">
           Aqui, cada história é recebida com cuidado e atenção. Vamos construir
           juntas(os) um processo terapêutico genuíno, baseado na ciência e na
           escuta humana.
