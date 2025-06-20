@@ -5,7 +5,7 @@ import { handleContact } from "@/lib/utils";
 
 export const Footer = () => {
   return (
-    <footer className="w-full py-16 bg-footer-background text-footer-foreground">
+    <footer className="w-full py-16 bg-footer-background text-background2">
       <Container className="flex flex-col justify-center gap-6 md:gap-8">
         <div className="flex justify-center  gap-4 md:gap-0">
           <img src={images.home.logoHorizontal2} className="w-[350px]" alt="" />
@@ -13,12 +13,12 @@ export const Footer = () => {
 
         <div className="flex flex-col md:flex-row justify-center md:text-start text-center">
           <div className="flex flex-col text-center justify-center">
-            <h4 className="font-light text-background2 md:text-footer-foreground font-josefin">
+            <h4 className="font-light text-lg mb-3 text-background2 font-sans">
               Contato
             </h4>
             <a
               onClick={handleContact}
-              className="font-light font-josefin block cursor-pointer hover:underline"
+              className="font-light font-sans block cursor-pointer hover:underline"
               target="_blank"
             >
               +55 (11) 93323-1296
@@ -35,7 +35,7 @@ export const Footer = () => {
         </div>
 
         <div className="flex flex-col gap-1.5 items-center text-center text-sm md:text-base">
-          <span className="font-light font-josefin">
+          <span className="font-light font-sans">
             Copyright © {new Date().getFullYear()} - todos os direitos
             reservados
           </span>

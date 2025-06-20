@@ -120,7 +120,7 @@ export const Hero = () => {
         ref={textRef}
         className="relative z-30 max-w-3xl text-center md:pt-25 pt-15 px-6"
       >
-        <h1 className="text-3xl md:text-5xl font-semibold mb-6 leading-snug">
+        <h1 className="text-[34px] md:text-6xl font-serif font-bold mb-6 leading-snug">
           Um espaço de{" "}
           <Underline
             ref={(el) => (highlightsRef.current[0] = el!)}
@@ -136,7 +136,7 @@ export const Hero = () => {
             word="reconexão."
           />
         </h1>
-        <p className="text-base font-poppins md:text-xl leading-relaxed mx-4">
+        <p className="text-base font-sans md:text-xl leading-relaxed mx-4">
           Aqui, cada história é recebida com cuidado e atenção. Vamos construir
           juntas(os) um processo terapêutico genuíno, baseado na ciência e na
           escuta humana.
@@ -145,7 +145,7 @@ export const Hero = () => {
         <div className="mt-12">
           <button
             onClick={scrollToOwner}
-            className="flex items-center font-poppins justify-center mx-auto gap-3 bg-foreground text-background px-6 py-2 rounded-full text-lg transition duration-300 hover:brightness-120"
+            className="flex items-center font-sans justify-center mx-auto gap-3 bg-foreground text-background px-6 py-2 rounded-full text-lg transition duration-300 hover:brightness-120"
           >
             Saiba mais
             <ChevronDown className="size-6 text-background animate-bounce" />
@@ -164,9 +164,9 @@ const Underline = ({
   word: string;
   ref: (el: HTMLSpanElement | null) => void;
 }) => (
-  <span ref={ref} className="relative inline-block px-1">
+  <span ref={ref} className="relative font-serif font-bold inline-block px-1">
     <span
-      className="absolute md:bottom-1 bottom-0 left-0 w-full h-[3px] bg-foreground origin-left scale-x-0"
+      className="absolute md:bottom-3 bottom-0 left-0 w-full h-[3px] bg-foreground origin-left scale-x-0"
       style={{ transformOrigin: "left" }}
     />
     {word}

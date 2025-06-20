@@ -113,14 +113,14 @@ export const OwnerSection = () => {
 
         <div className="w-full flex flex-col  mx-auto md:mx-0 max-w-[524px] gap-6 md:gap-8">
           <div className="flex flex-col">
-            <h1 className="md:text-[40px] text-[25px] text-footer-background pt-2 leading-[100%] text-center md:text-start">
+            <h1 className="md:text-5xl text-[25px] font-serif text-footer-background pt-2 leading-[100%] text-center md:text-start">
               Psi. Janine Coelho Correa
             </h1>
 
-            <h2 className="font-poppins text-center md:text-start py-1 font-light text-xl">
+            <h2 className="font-sans text-center md:text-start py-1 font-light text-xl">
               Psicóloga Analista do Comportamento - ACT & FAP
             </h2>
-            <span className="font-medium text-center md:text-start">
+            <span className="font-medium font-sans text-center md:text-start">
               CRP 06/ 154012
             </span>
           </div>
@@ -133,7 +133,7 @@ export const OwnerSection = () => {
             quem é, com segurança e respeito. ”
           </blockquote> */}
 
-          <p className="font-poppins text-[17px] text-justify font-light hyphens-auto">
+          <p className="font-sans text-[17px] text-justify font-light hyphens-auto">
             Sou Psicóloga Formada pela Unesp em 2018, atuo com o atendimento
             clinico de adultos desde a conclusão da minha graduação e adoto como
             abordagem a Terapia Comportamental. Também tenho especialização em
@@ -150,9 +150,9 @@ export const OwnerSection = () => {
           </p>
           <button
             onClick={handleContactFullbanerOnline}
-            className="group cursor-pointer flex items-center justify-center gap-3 font-poppins px-4 py-2 max-w-3xs md:text-lg text-base  bg-foreground text-background rounded-full hover:brightness-120 transition-all"
+            className="group cursor-pointer flex items-center justify-center gap-3 font-sans px-4 py-2 max-w-3xs md:text-lg text-base  bg-foreground text-background rounded-full hover:brightness-120 transition-all"
           >
-            <MessageSquareText className="size-6 text-background group-hover:animate-wiggle" />
+            <MessageSquareText className="md:size-6 size-5 fpnt-sans text-background group-hover:animate-wiggle" />
             Vamos conversar
           </button>
         </div>
@@ -170,7 +170,7 @@ export const FullBanner = () => {
       <div className="absolute pointer-events-none top-0 left-0 w-full h-full overflow-hidden">
         <img
           // ref={imgRef}
-          className="w-full h-full object-cover brightness-60 duration-200 ease-out "
+          className="w-full h-full object-cover md:brightness-60 brightness-52 duration-200 ease-out "
           src={images.home.books}
           loading="lazy"
           alt=""
@@ -178,10 +178,10 @@ export const FullBanner = () => {
       </div>
 
       <Container className="relative z-10 flex flex-col justify-center gap-6 h-full pointer-events-none">
-        <h2 className="md:text-[40px] text-[25px] max-w-[75%] font-clash-grotesk text-white md:max-w-[489px] leading-[100%] pointer-events-auto">
+        <h2 className="md:text-[40px] text-[25px] max-w-[75%] font-serif text-background md:max-w-[489px] leading-[100%] pointer-events-auto">
           Você merece esse espaço terapêutico.
         </h2>
-        <p className="md:text-base font-poppins text-[15px] max-w-[75%] text-white w-full md:max-w-[489px] pointer-events-auto">
+        <p className="md:text-base font-sans text-[15px] max-w-[75%] text-background w-full md:max-w-[489px] pointer-events-auto">
           A terapia é um convite para olhar para si com mais compreensão. Se
           você sente que é hora de se cuidar, posso te acompanhar nesse
           processo.
@@ -189,9 +189,9 @@ export const FullBanner = () => {
         <div className="flex gap-4 pointer-events-auto">
           <button
             onClick={handleContactFullbanerOnline}
-            className="group flex gap-3 items-center cursor-pointer font-poppins px-6 py-2 md:text-lg text-sm bg-background text-foreground rounded-full hover:brightness-70 transition-all"
+            className="group flex md:gap-3 gap-2 font-sans items-center cursor-pointer px-6 py-2 md:text-lg text-sm bg-background text-foreground rounded-full hover:brightness-70 transition-all"
           >
-            <MessageSquareText className="size-6 text-foreground group-hover:animate-wiggle" />
+            <MessageSquareText className="md:size-6 size-5 text-foreground  group-hover:animate-wiggle" />
             Estou aqui para te ouvir
           </button>
         </div>
@@ -262,9 +262,9 @@ export const CertificationSection = () => {
         <div className="mb-4 flex flex-col md:flex-row items-center gap-y-8 md:justify-between text-center">
           <div className="max-w-2xs p-4 bg-background2 rounded-4xl space-y-1">
             <div className="flex justify-center items-center">
-              <GraduationCap size={64} className="text-foreground" />
+              <GraduationCap size={60} className="text-foreground" />
             </div>
-            <h2 className="text-base  mb-4">
+            <h2 className="text-base font-sans  mb-4">
               <span className="text-xl text-foreground">
                 Formação acadêmica
               </span>{" "}
@@ -276,9 +276,9 @@ export const CertificationSection = () => {
           </div>
           <div className="max-w-2xs p-4 bg-background2 rounded-4xl space-y-1">
             <div className="flex justify-center items-center">
-              <BadgeCheck size={64} className="text-foreground" />
+              <BadgeCheck size={60} className="text-foreground" />
             </div>
-            <h2 className="text-base mb-4">
+            <h2 className="text-base font-sans mb-4">
               <span className="text-xl text-foreground">Especializações</span>{" "}
               <br />
               <br />
@@ -288,9 +288,9 @@ export const CertificationSection = () => {
           </div>
           <div className="max-w-2xs p-4 bg-background2 rounded-4xl space-y-1">
             <div className="flex justify-center items-center">
-              <Brain size={64} className="text-foreground" />
+              <Brain size={60} className="text-foreground" />
             </div>
-            <h2 className="text-base">
+            <h2 className="text-base font-sans">
               <span className="text-xl text-foreground">Foco de atuação</span>{" "}
               <br />
               <br /> Atendimento a adultos por meio de abordagens baseadas em
@@ -307,11 +307,11 @@ export const DifferencesSection = () => {
   return (
     <section className="py-8 md:py-24">
       <Container className="flex flex-col gap-4 md:gap-8 relative">
-        <h2 className="text-[25px] text-foreground md:text-[40px]">
+        <h2 className="text-[25px] font-serif font-bold text-foreground md:text-5xl">
           Sobre o atendimento
         </h2>
         <div className="flex gap-8">
-          <Accordion className="gap-4 flex-col flex flex-1" type="multiple">
+          <Accordion className="gap-4 flex-col flex md:flex-1" type="multiple">
             <DifferencesItem
               value={"1"}
               title="Por que o atendimento online?"
@@ -399,12 +399,14 @@ export const DifferencesItem = ({
         <div className="flex text-hotorange md:gap-6 gap-3 items-center">
           <Icon className="size-6" />
           <div className="flex text-foreground flex-col">
-            <h3 className="md:font-medium text-base md:text-lg">{title}</h3>
+            <h3 className="md:font-medium font-serif text-lg md:text-2xl">
+              {title}
+            </h3>
           </div>
         </div>
       </AccordionTrigger>
       <AccordionContent>
-        <p className="pt-6 font-poppins font-light text-justify hyphens-auto px-2">
+        <p className="pt-6 font-sans text-[17px] font-light text-justify hyphens-auto px-2">
           {text}
         </p>
       </AccordionContent>

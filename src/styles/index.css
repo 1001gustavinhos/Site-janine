@@ -66,8 +66,10 @@
 
 @theme {
   --font-clash-grotesk: "ClashGrotesk", sans-serif;
+  --font-sans: "PT Sans", sans-serif;
   --font-poppins: "Poppins", sans-serif;
   --font-josefin: "Josefin Sans", sans-serif;
+  --font-serif: "Playfair", serif;
   --animate-wiggle: wiggle 1s ease-in-out infinite;
   @keyframes wiggle {
     0%,
