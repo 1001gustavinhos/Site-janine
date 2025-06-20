@@ -113,11 +113,11 @@ export const OwnerSection = () => {
 
         <div className="w-full flex flex-col  mx-auto md:mx-0 max-w-[524px] gap-6 md:gap-8">
           <div className="flex flex-col">
-            <h1 className="md:text-5xl text-[25px] font-serif text-footer-background pt-2 leading-[100%] text-center md:text-start">
+            <h1 className="md:text-5xl text-[31px] font-serif text-footer-background pt-2 leading-[100%] text-center md:text-start">
               Psi. Janine Coelho Correa
             </h1>
 
-            <h2 className="font-sans text-center md:text-start py-1 font-light text-xl">
+            <h2 className="font-sans text-center md:text-start py-1 font-light text-base md:text-xl">
               Psicóloga Analista do Comportamento - ACT & FAP
             </h2>
             <span className="font-medium font-sans text-center md:text-start">
