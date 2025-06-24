@@ -43,7 +43,7 @@ export default function RootLayout({
     <html lang="en">
       <head>
         {/* Open Graph */}
-        <meta property="og:title" content="Psi. Janine Corrêa" />
+        <meta property="og:title" content="Psi. Janine Correa" />
         <meta
           property="og:description"
           content="Analista do Comportamento - ACT & FAP"
@@ -51,11 +51,11 @@ export default function RootLayout({
         <meta property="og:image" content="/images/metaImage.jpeg" />
         <meta property="og:type" content="website" />
         <meta property="og:locale" content="pt_BR" />
-        <meta property="og:url" content="https://seudominio.com/" />
+        <meta property="og:url" content="https://psijaninecorrea.com.br" />
 
         {/* Twitter */}
         <meta name="twitter:card" content="summary_large_image" />
-        <meta name="twitter:title" content="Psi. Janine Corrêa" />
+        <meta name="twitter:title" content="Psi. Janine Correa" />
         <meta
           name="twitter:description"
           content="Analista do Comportamento - ACT & FAP"
