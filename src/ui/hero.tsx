@@ -122,7 +122,7 @@ export const Hero = () => {
         ref={textRef}
         className="relative z-30 max-w-3xl text-center md:pt-25 pt-15 px-6"
       >
-        <h1 className="text-[34px] md:text-6xl font-serif font-bold mb-6 leading-snug">
+        <h2 className="text-[34px] md:text-6xl font-serif font-bold mb-6 leading-snug">
           Um espaço de{" "}
           <Underline
             ref={(el) => (highlightsRef.current[0] = el!)}
@@ -137,7 +137,7 @@ export const Hero = () => {
             ref={(el) => (highlightsRef.current[2] = el!)}
             word="reconexão."
           />
-        </h1>
+        </h2>
         <p className="text-base font-sans md:text-xl leading-relaxed mx-4">
           Aqui, cada história é recebida com cuidado e atenção. Vamos construir
           juntas(os) um processo terapêutico genuíno, baseado na ciência e na
