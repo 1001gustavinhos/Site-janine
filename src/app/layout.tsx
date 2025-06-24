@@ -14,7 +14,7 @@ export const metadata = {
     siteName: "Psi. Janine Correa",
     images: [
       {
-        url: "/metaImage.jpeg", // coloque a imagem na pasta public/
+        url: "/images/metaImage.jpeg", // coloque a imagem na pasta public/
         width: 1200,
         height: 630,
         alt: "Imagem de capa do site da Psi. Janine Correa",
@@ -27,10 +27,7 @@ export const metadata = {
     card: "summary_large_image",
     title: "Psi. Janine Correa",
     description: "Um espaço de escuta, acolhimento e transformação.",
-    images: ["/metaImage.jpg"],
-  },
-  icons: {
-    icon: "/metaImage.jpeg",
+    images: ["/images/metaImage.jpeg"],
   },
 };
 
