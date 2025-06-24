@@ -27,5 +27,5 @@
       "@/*": ["./src/*"]
     }
   },
-  "include": ["src"]
+  "include": ["src", "HomePage.tsx", "src/app/ClientOnly.tsx"]
 }
