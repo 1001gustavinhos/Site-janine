@@ -30,9 +30,10 @@
     ]
   },
   "include": [
+    "build/types/**/*.ts",
     "next-env.d.ts",
     "src/**/*",
-    "build/types/**/*.ts"
+    ".next/types/**/*.ts"
   ],
   "exclude": [
     "node_modules"
