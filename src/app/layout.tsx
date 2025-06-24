@@ -29,6 +29,9 @@ export const metadata = {
     description: "Um espaço de escuta, acolhimento e transformação.",
     images: ["/images/metaImage.jpeg"],
   },
+  icons: {
+    icon: "/favicon.ico",
+  },
 };
 
 export default function RootLayout({
