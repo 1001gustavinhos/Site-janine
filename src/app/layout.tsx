@@ -67,6 +67,7 @@ export default function RootLayout({
           content="Analista do Comportamento - ACT & FAP"
         />
         <meta name="twitter:image" content="/images/metaImage.jpeg" />
+        <link rel="icon" href="/favicon.ico"></link>
       </head>
       <body>
         <div id="root">{children}</div>
