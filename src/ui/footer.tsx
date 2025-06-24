@@ -19,7 +19,7 @@ export const Footer = () => {
             <button
               onClick={handleContact}
               className="font-light font-sans block cursor-pointer hover:underline"
-              target="_blank"
+              aria-label="mandar mensagem para Janine Correa"
             >
               +55 (11) 93323-1296
             </button>
