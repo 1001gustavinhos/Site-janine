@@ -1,7 +1,7 @@
 import "../styles/index.css";
-import { Playfair_Display, PT_Sans } from "next/font/google";
+import { Playfair, PT_Sans } from "next/font/google";
 
-const playfair = Playfair_Display({
+const playfair = Playfair({
   subsets: ["latin"],
   weight: ["400", "700", "900"],
   style: ["normal", "italic"],
@@ -67,14 +67,6 @@ export default function RootLayout({
           content="Analista do Comportamento - ACT & FAP"
         />
         <meta name="twitter:image" content="/images/metaImage.jpeg" />
-        <link
-          href="https://fonts.googleapis.com/css2?family=Playfair:ital,opsz,wght@0,5..1200,300..900;1,5..1200,300..900&display=swap"
-          rel="stylesheet"
-        />
-        <link
-          href="https://fonts.googleapis.com/css2?family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap"
-          rel="stylesheet"
-        />
       </head>
       <body>
         <div id="root">{children}</div>
