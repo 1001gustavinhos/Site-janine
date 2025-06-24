@@ -42,6 +42,25 @@ export default function RootLayout({
   return (
     <html lang="en">
       <head>
+        {/* Open Graph */}
+        <meta property="og:title" content="Psi. Janine Corrêa" />
+        <meta
+          property="og:description"
+          content="Um espaço de escuta, acolhimento e transformação."
+        />
+        <meta property="og:image" content="/images/metaImage.jpeg" />
+        <meta property="og:type" content="website" />
+        <meta property="og:locale" content="pt_BR" />
+        <meta property="og:url" content="https://seudominio.com/" />
+
+        {/* Twitter */}
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:title" content="Psi. Janine Corrêa" />
+        <meta
+          name="twitter:description"
+          content="Um espaço de escuta, acolhimento e transformação."
+        />
+        <meta name="twitter:image" content="/images/metaImage.jpeg" />
         <link
           href="https://fonts.googleapis.com/css2?family=Playfair:ital,opsz,wght@0,5..1200,300..900;1,5..1200,300..900&display=swap"
           rel="stylesheet"
