@@ -13,16 +13,16 @@ export const Footer = () => {
 
         <div className="flex flex-col md:flex-row justify-center md:text-start text-center">
           <div className="flex flex-col text-center justify-center">
-            <h4 className="font-light text-lg mb-3 text-background2 font-sans">
+            <h2 className="font-light text-lg mb-3 text-background2 font-sans">
               Contato
-            </h4>
-            <a
+            </h2>
+            <button
               onClick={handleContact}
               className="font-light font-sans block cursor-pointer hover:underline"
               target="_blank"
             >
               +55 (11) 93323-1296
-            </a>
+            </button>
           </div>
           <div className="flex flex-col gap-1.5"></div>
         </div>

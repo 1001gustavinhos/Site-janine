@@ -446,6 +446,7 @@ export const WhatsAppBadge = () => {
             className="w-full h-full flex items-center justify-center bg-foreground rounded-full transition-all cursor-pointer hover:opacity-80"
             onClick={handleContact}
             rel="noopener noreferrer"
+            aria-label="Abrir menu"
           >
             <svg
               className="size-6 my-auto text-primary-foreground md:flex"

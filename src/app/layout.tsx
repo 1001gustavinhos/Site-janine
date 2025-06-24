@@ -1,4 +1,21 @@
 import "../styles/index.css";
+import { Playfair_Display, PT_Sans } from "next/font/google";
+
+const playfair = Playfair_Display({
+  subsets: ["latin"],
+  weight: ["400", "700", "900"],
+  style: ["normal", "italic"],
+  variable: "--font-playfair",
+  display: "swap",
+});
+
+const ptSans = PT_Sans({
+  subsets: ["latin"],
+  weight: ["400", "700"],
+  style: ["normal", "italic"],
+  variable: "--font-pt-sans",
+  display: "swap",
+});
 
 export const metadata = {
   title: {
@@ -40,7 +57,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html lang="en">
+    <html lang="pt-BR" className={`${playfair.variable} ${ptSans.variable}`}>
       <head>
         {/* Twitter */}
         <meta name="twitter:card" content="summary_large_image" />
