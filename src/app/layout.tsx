@@ -46,7 +46,7 @@ export default function RootLayout({
         <meta property="og:title" content="Psi. Janine Corrêa" />
         <meta
           property="og:description"
-          content="Um espaço de escuta, acolhimento e transformação."
+          content="Analista do Comportamento - ACT & FAP"
         />
         <meta property="og:image" content="/images/metaImage.jpeg" />
         <meta property="og:type" content="website" />
@@ -58,7 +58,7 @@ export default function RootLayout({
         <meta name="twitter:title" content="Psi. Janine Corrêa" />
         <meta
           name="twitter:description"
-          content="Um espaço de escuta, acolhimento e transformação."
+          content="Analista do Comportamento - ACT & FAP"
         />
         <meta name="twitter:image" content="/images/metaImage.jpeg" />
         <link
