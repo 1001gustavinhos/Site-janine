@@ -1,5 +1,6 @@
 import "../styles/index.css";
 import { Playfair, PT_Sans } from "next/font/google";
+import { Metadata } from "next";
 
 const playfair = Playfair({
   subsets: ["latin"],
@@ -17,7 +18,7 @@ const ptSans = PT_Sans({
   display: "swap",
 });
 
-export const metadata = {
+export const metadata: Metadata = {
   title: {
     default: "Psicóloga Janine Correa",
     template: "%s | Psi. Janine Correa | Analista do Comportamento - ACT & FAP",
