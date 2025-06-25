@@ -1,4 +1,4 @@
 module.exports = {
-  siteUrl: "https://seudominio.com",
+  siteUrl: "https://psijaninecorrea.com.br",
   generateRobotsTxt: true,
 };
