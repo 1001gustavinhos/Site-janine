@@ -3,6 +3,13 @@ import { socialIcons } from "@/constants/socialIcons";
 import { images } from "@/constants/images";
 import { handleContact } from "@/lib/utils";
 
+const DEV_PHONE_NUMBER = "11981071231";
+const WHATSAPP_MESSAGE_DEV =
+  "Olá! Gostaria de uma solução tecnológica para o meu negócio. Poderia me ajudar?";
+const WHATSAPP_LINK_DEV = `https://wa.me/55${DEV_PHONE_NUMBER}?text=${encodeURIComponent(
+  WHATSAPP_MESSAGE_DEV
+)}`;
+
 export const Footer = () => {
   return (
     <footer className="w-full py-16 bg-footer-background text-background2">
@@ -32,6 +39,23 @@ export const Footer = () => {
             Política de privacidade
           </a>
           <a className="sm:pl-4 font-light font-josefin block">Termos de uso</a> */}
+        </div>
+
+        <div className="flex flex-col items-center gap-2">
+          <span className="text-muted-foreground">Desenvolvido por:</span>
+          <a
+            href={WHATSAPP_LINK_DEV}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="hover:opacity-80 transition-opacity"
+            aria-label="Fale com o desenvolvedor via WhatsApp"
+          >
+            <img
+              src="/images/devDantas.png"
+              alt="Logo do desenvolvedor"
+              className="max-w-sm"
+            />
+          </a>
         </div>
 
         <div className="flex flex-col gap-1.5 items-center text-center text-sm md:text-base">
