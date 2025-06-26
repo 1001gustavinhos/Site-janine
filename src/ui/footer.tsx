@@ -42,7 +42,7 @@ export const Footer = () => {
         </div>
 
         <div className="flex flex-col items-center gap-2">
-          <span className="text-muted-foreground">Desenvolvido por:</span>
+          <span className="text-background2">Desenvolvido por:</span>
           <a
             href={WHATSAPP_LINK_DEV}
             target="_blank"
