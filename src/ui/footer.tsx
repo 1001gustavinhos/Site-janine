@@ -42,7 +42,7 @@ export const Footer = () => {
         </div>
 
         <div className="flex flex-col items-center gap-2">
-          <span className="text-background2">Desenvolvido por:</span>
+          <span className="text-background2">Site desenvolvido por:</span>
           <a
             href={WHATSAPP_LINK_DEV}
             target="_blank"
@@ -53,7 +53,7 @@ export const Footer = () => {
             <img
               src="/images/devDantas.png"
               alt="Logo do desenvolvedor"
-              className="max-w-sm"
+              className="max-w-xs"
             />
           </a>
         </div>
