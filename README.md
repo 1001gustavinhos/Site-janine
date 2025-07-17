@@ -1,4 +1,4 @@
-# 🌱 Site Institucional – Psicóloga Janine Correa
+# Site Institucional – Psicóloga Janine Correa
 
 Este repositório contém o site institucional da psicóloga Janine Correa, desenvolvido como uma Single Page Application (SPA) com foco em design acolhedor, responsividade e animações suaves. O projeto utiliza o novo App Router do Next.js 15 e está estruturado para exportação estática.
 
