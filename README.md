@@ -41,6 +41,6 @@ npm run lint
 
 ---
 
-## Analise lighthouse para desktop e mobile:
+## Análise lighthouse para desktop e mobile:
 
 <img width="345" height="245" alt="lighhouse 1" src="https://github.com/user-attachments/assets/2c8a50ea-ba0a-4a70-87bf-0c3b9e06504a" />
