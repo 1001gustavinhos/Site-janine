@@ -125,14 +125,6 @@ export const OwnerSection = () => {
             </span>
           </div>
 
-          {/* <blockquote className="font-poppins pl-3 border-l-2 text-justify font-light hyphens-auto">
-            “Cada processo terapêutico é conduzido com base em escuta ativa,
-            vínculo terapêutico e intervenções fundamentadas em evidências
-            científicas. Aqui, você não encontra fórmulas prontas — encontra
-            acolhimento real, ciência aplicada e um espaço pensado para você ser
-            quem é, com segurança e respeito. ”
-          </blockquote> */}
-
           <p className="font-sans text-[17px] text-justify font-light hyphens-auto">
             Sou Psicóloga Formada pela Unesp em 2018, atuo com o atendimento
             clinico de adultos desde a conclusão da minha graduação e adoto como
@@ -163,13 +155,9 @@ export const OwnerSection = () => {
 
 export const FullBanner = () => {
   return (
-    <section
-      // ref={sectionRef}
-      className="relative w-full md:h-[618px] sm:h-[320px] h-[300px] bg-black overflow-hidden"
-    >
+    <section className="relative w-full md:h-[618px] sm:h-[320px] h-[300px] bg-black overflow-hidden">
       <div className="absolute pointer-events-none top-0 left-0 w-full h-full overflow-hidden">
         <img
-          // ref={imgRef}
           className="w-full h-full object-cover md:brightness-60 brightness-52 duration-200 ease-out "
           src={images.home.books}
           loading="lazy"
@@ -195,65 +183,10 @@ export const FullBanner = () => {
             Estou aqui para te ouvir
           </button>
         </div>
-        {/* <p className="md:text-xl text-xs font-light font-poppins text-white text-center pt-3 md:hidden">
-          Atendimento de excelência, presencial ou online, com base em ciência,
-          tecnologia e escuta ativa — para resultados reais em performance e
-          composição corporal.
-        </p> */}
       </Container>
     </section>
   );
 };
-
-// export const CertificationSection = () => {
-//   const items = [
-//     {
-//       icon: <Brain className="size-7 text-foreground" />,
-//       title: "Foco de atuação",
-//       description:
-//         "Atendimento a adultos por meio de abordagens baseadas em evidências científicas há mais de 8 anos.",
-//     },
-//     {
-//       icon: <BadgeCheck className="size-7 text-foreground" />,
-//       title: "Especializações",
-//       description:
-//         "Certificação em ACT (Terapia de Aceitação e Compromisso) e FAP (Psicoterapia Analítica Funcional).",
-//     },
-//     {
-//       icon: <GraduationCap className="size-7 text-foreground" />,
-//       title: "Formação acadêmica",
-//       description:
-//         "Graduada em Psicologia pela UNESP - Bauru com foco em Análise do Comportamento.",
-//     },
-//   ];
-
-//   return (
-//     <Container>
-//       <section className="py-12">
-//         <div className="grid gap-6 md:grid-cols-3">
-//           {items.map((item, i) => (
-//             <div
-//               key={i}
-//               className="bg-background2 rounded-3xl p-6 shadow-sm hover:shadow-md transition-all duration-300"
-//             >
-//               <div className="flex items-start gap-4">
-//                 <div>{item.icon}</div>
-//                 <div>
-//                   <h3 className="text-lg font-semibold text-foreground mb-2">
-//                     {item.title}
-//                   </h3>
-//                   <p className="text-sm text-muted-foreground">
-//                     {item.description}
-//                   </p>
-//                 </div>
-//               </div>
-//             </div>
-//           ))}
-//         </div>
-//       </section>
-//     </Container>
-//   );
-// };
 
 export const CertificationSection = () => {
   return (
@@ -360,12 +293,6 @@ export const DifferencesSection = () => {
               icon={SparkleIcon}
               text="Todas as informações compartilhadas em sessão são protegidas por sigilo profissional, conforme previsto no Código de Ética da Psicologia. Seus dados pessoais, históricos e relatos são tratados com absoluto cuidado, e nunca são compartilhados com terceiros. O ambiente da terapia é seguro, e a confidencialidade é uma prioridade em todo o processo."
             />
-            {/* <AccordionItem value="item-1">
-          <AccordionTrigger>Is it accessible?</AccordionTrigger>
-          <AccordionContent>
-            Yes. It adheres to the WAI-ARIA design pattern.
-          </AccordionContent>
-        </AccordionItem> */}
           </Accordion>
           <div className="hidden md:block w-[410px] h-[544px] sticky top-3">
             <img
