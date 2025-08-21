@@ -1,6 +1,5 @@
 import "../styles/index.css";
 import { Playfair, PT_Sans } from "next/font/google";
-import { Metadata } from "next";
 
 const playfair = Playfair({
   subsets: ["latin"],
@@ -18,19 +17,6 @@ const ptSans = PT_Sans({
   display: "swap",
 });
 
-export const metadata: Metadata = {
-  title: {
-    default: "Psicóloga Janine Correa",
-    template: "%s | Psi. Janine Correa | Analista do Comportamento - ACT & FAP",
-  },
-  description:
-    "Sou Psicóloga Formada pela Unesp em 2018, atuo com o atendimento clinico de adultos desde a conclusão da minha graduação e adoto como abordagem a Terapia Comportamental. Também tenho especialização em Psicoterapia Analítica Funcional (FAP) e em Terapia de aceitação e compromisso (ACT).",
-  metadataBase: new URL("https://psijaninecorrea.com.br"),
-  icons: {
-    icon: "/favicon.ico",
-  },
-};
-
 export default function RootLayout({
   children,
 }: {
@@ -41,8 +27,6 @@ export default function RootLayout({
       <head>
         <meta charSet="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-
-        {/* Open Graph / Facebook meta tags */}
         <meta property="og:type" content="website" />
         <meta property="og:url" content="/" />
         <meta
@@ -63,7 +47,6 @@ export default function RootLayout({
         <meta property="og:site_name" content="Psicóloga Janine Correa" />
         <meta property="og:locale" content="pt_BR" />
 
-        {/* Twitter meta tags */}
         <meta name="twitter:card" content="summary_large_image" />
         <meta name="twitter:title" content="Psicóloga Janine Correa" />
         <meta
@@ -72,7 +55,6 @@ export default function RootLayout({
         />
         <meta name="twitter:image" content="/images/metaImage.jpg" />
 
-        {/* Favicon and canonical URL */}
         <link rel="icon" href="/favicon.ico" />
         <link rel="canonical" href="https://psijaninecorrea.com.br" />
       </head>
