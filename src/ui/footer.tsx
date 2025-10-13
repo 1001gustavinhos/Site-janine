@@ -34,13 +34,6 @@ export const Footer = () => {
           <div className="flex flex-col gap-1.5"></div>
         </div>
 
-        <div className="pt-4 flex flex-col sm:flex-row items-center sm:items-end md:border-t-2 border-t-1 justify-center sm:justify-end gap-2 sm:gap-0">
-          {/* <a className="sm:pr-4 sm:border-r-2 font-light font-josefin block ">
-            Política de privacidade
-          </a>
-          <a className="sm:pl-4 font-light font-josefin block">Termos de uso</a> */}
-        </div>
-
         <div className="flex flex-col items-center gap-2">
           <span className="text-background2">Site desenvolvido por:</span>
           <a
