@@ -42,9 +42,10 @@ export const Footer = () => {
             <Image
               src="/images/devDantas2.png"
               alt="Logo do desenvolvedor"
-              width={150}
-              height={50}
+              width={300}
+              height={100}
               className="max-w-xs"
+              style={{ width: "auto", height: "auto" }} // Isso resolve o warning
             />
           </a>
         </div>
