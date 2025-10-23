@@ -5,7 +5,7 @@ import {
   AccordionTrigger,
 } from "@/ui/accordion";
 import { Container } from "@/ui/container";
-import { Footer } from "@/ui/footer2";
+import { Footer } from "@/ui/footer";
 import { Header } from "@/ui/header";
 import { Hero } from "@/ui/hero";
 import { images } from "@/constants/images";
