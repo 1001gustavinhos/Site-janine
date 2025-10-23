@@ -1,14 +1,10 @@
 import { Container } from "./container";
 import { socialIcons } from "@/constants/socialIcons";
 import { images } from "@/constants/images";
+import Image from "next/image";
 import { handleContact } from "@/lib/utils";
 
-const DEV_PHONE_NUMBER = "11981071231";
-const WHATSAPP_MESSAGE_DEV =
-  "Olá! Gostaria de uma solução tecnológica para o meu negócio. Poderia me ajudar?";
-const WHATSAPP_LINK_DEV = `https://wa.me/55${DEV_PHONE_NUMBER}?text=${encodeURIComponent(
-  WHATSAPP_MESSAGE_DEV
-)}`;
+const WHATSAPP_LINK_DEV = `https://www.gasad.com.br/`;
 
 export const Footer = () => {
   return (
@@ -43,9 +39,11 @@ export const Footer = () => {
             className="hover:opacity-80 transition-opacity"
             aria-label="Fale com o desenvolvedor via WhatsApp"
           >
-            <img
-              src="./images/devDantas2.png"
+            <Image
+              src="/images/devDantas2.png"
               alt="Logo do desenvolvedor"
+              width={150}
+              height={50}
               className="max-w-xs"
             />
           </a>
