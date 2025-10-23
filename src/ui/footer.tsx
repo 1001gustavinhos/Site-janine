@@ -44,7 +44,7 @@ export const Footer = () => {
             aria-label="Fale com o desenvolvedor via WhatsApp"
           >
             <img
-              src="./images/devDantas.png"
+              src="./images/devDantas2.png"
               alt="Logo do desenvolvedor"
               className="max-w-xs"
             />
