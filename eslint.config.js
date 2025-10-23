@@ -16,7 +16,6 @@ export default tseslint.config(
     plugins: {
       "react-hooks": reactHooks,
       "react-refresh": reactRefresh,
-      "@next/next": require("@next/eslint-plugin-next"),
     },
     rules: {
       ...reactHooks.configs.recommended.rules,
