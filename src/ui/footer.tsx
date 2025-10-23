@@ -1,5 +1,4 @@
 import { Container } from "./container";
-import { socialIcons } from "@/constants/socialIcons";
 import { images } from "@/constants/images";
 import Image from "next/image";
 import { handleContact } from "@/lib/utils";
@@ -58,40 +57,5 @@ export const Footer = () => {
         </div>
       </Container>
     </footer>
-  );
-};
-
-export const SocialIcons = ({ className = "", iconSize = 6 }) => {
-  // Definindo classes de tamanho fixas
-  const sizeClasses =
-    {
-      4: "w-4 h-4",
-      5: "w-5 h-5",
-      6: "w-6 h-6",
-      7: "w-7 h-7",
-      8: "w-8 h-8",
-    }[iconSize] || "w-6 h-6";
-
-  return (
-    <div className={`flex gap-4 ${className}`}>
-      {socialIcons.map((icon) => (
-        <a
-          key={icon.name}
-          href={icon.url || "#"} // Adicione URLs reais aqui
-          aria-label={icon.name}
-          className="text-current hover:opacity-75 transition-opacity"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <svg
-            className={`${sizeClasses} fill-current`}
-            viewBox={icon.viewBox}
-            xmlns="http://www.w3.org/2000/svg"
-          >
-            <path d={icon.path} />
-          </svg>
-        </a>
-      ))}
-    </div>
   );
 };
