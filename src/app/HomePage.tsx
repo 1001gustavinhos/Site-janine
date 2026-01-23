@@ -25,7 +25,7 @@ export const HomePage = () => {
   return (
     <>
       <Header />
-      <main>
+      <main className="bg-background">
         <Hero />
         <OwnerSection />
 
@@ -59,7 +59,7 @@ export const ImageSection = ({
         <h2
           className={cn(
             "md:text-[40px] text-[25px] justify-start md:hidden",
-            inverted && "md:text-right"
+            inverted && "md:text-right",
           )}
         >
           {title}
@@ -67,7 +67,7 @@ export const ImageSection = ({
         <div
           className={cn(
             " w-full md:max-w-[413px] mx-auto md:h-[360px] rounded-3xl overflow-hidden",
-            inverted && "md:order-last"
+            inverted && "md:order-last",
           )}
         >
           <img
@@ -80,14 +80,14 @@ export const ImageSection = ({
         <div className={"w-full max-w-[512px] flex flex-col gap-6"}>
           <h2
             className={cn(
-              "text-[40px] text-start justify-start md:block hidden"
+              "text-[40px] text-start justify-start md:block hidden",
             )}
           >
             {title}
           </h2>
           <p
             className={cn(
-              "text-muted-foreground text-xl hyphens-auto text-justify w-full"
+              "text-muted-foreground text-xl hyphens-auto text-justify w-full",
             )}
           >
             {text}
@@ -364,7 +364,7 @@ export const WhatsAppBadge = () => {
     <div
       className={cn(
         "w-full sticky z-50 bottom-4 transition-opacity duration-500 ease-in-out",
-        showBadge ? "opacity-100" : "opacity-0 pointer-events-none"
+        showBadge ? "opacity-100" : "opacity-0 pointer-events-none",
       )}
     >
       <div className="max-w-[1920px] w-full h-0 absolute pointer-events-none z-50 left-1/2 -translate-x-1/2">
